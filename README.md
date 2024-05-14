@@ -1,7 +1,7 @@
 # CinemAI
 
 ## Overview
-The follwoing repo contains an implementation for a LLM-based chatbot designed designed to respond to queries about movies using a Neo4j graph database. The assistant is implemented using LangChain, Neo4j, and OpenAI's GPT models to process queries, interact with the database, and generate responses. The assistant is also capable of accepting user feedback and using it to improve future responses.
+The follwoing repo contains an implementation for a LLM-based chatbot designed to respond to queries about movies using a Neo4j graph database. The assistant is implemented using LangChain, Neo4j (sandbox), and OpenAI's GPT models to process queries, interact with the database, and generate responses. The assistant is also capable of accepting user feedback and using it to improve future responses.
 
 ## Features
 - **Multiple Language Models**: Supports various GPT models (GPT-4, GPT-4 Turbo, GPT-3.5, GPT-3.5 Turbo). Can be customized using the `--model` flag.
@@ -15,7 +15,6 @@ The assistant is comprised of several "chains":
 * a chain that converts natural language queries into Cypher queries and then executes them against the Neo4j database.
 * a chain that converts the results of the database queries into natural language responses.
 * a chain that manages the decision-making process for how to respond to a given user query, handle feedback, and provide contextual information to the Cypher chain. Much of this is achieved via a classifcation mechanism that groups queries into 4 categories: `F - feedback`, `Q - query database`, `M - memory response`, and `I - invalid query`.
-
 
 ## Installation
 
