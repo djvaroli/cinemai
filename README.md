@@ -21,8 +21,8 @@ The assistant is comprised of several "chains":
 
 1. **Clone the repository**:
     ```sh
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/djvaroli/cinemai.git
+    cd cinemai
     ```
 2. **Create conda environment**:
     ```sh
