@@ -38,7 +38,7 @@ The assistant is comprised of several "chains":
     Create a `.env` file in the root directory with the following content:
     ```env
     OPENAI_API_KEY=your_openai_api_key
-    NEO4J_URL=bolt://localhost:7687
+    NEO4J_URL=your_url
     NEO4J_PASSWORD=your_password
     # optional for langsmith reporting
     LANGCHAIN_API_KEY=your_langchain_api_key
